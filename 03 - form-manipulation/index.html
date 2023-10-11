@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Manipulation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
 
 </head>
 <body>
-    <form action="" id="formEx1">
+    <!-- <form action="" id="formEx1">
         <fieldset>
             <legend>Formulaire compte :</legend>
 
@@ -19,19 +19,63 @@
             <input type="email" name="emailEx1" id="emailEx1" required>
             <fieldset>
                 <legend>Genre :</legend>
-
                 <input type="checkbox" name="genreFEx1" id="genreFEx1" value="Female">
                 <label for="genreFEx1">Femme</label>
                 <input type="checkbox" name="genreMEx1" id="genreMEx1" value="Male">
                 <label for="genreMEx1">Homme</label>
             </fieldset>
+            <fieldset>
+                <legend>Préférences :</legend>
+                <input type="radio" name="prefer" id="food" value="food">
+                <label for="food">Alimentation</label>
+                <input type="radio" name="prefer" id="sport" value="sport">
+                <label for="sport">Sport</label>
+                <input type="radio" name="prefer" id="cinema" value="cinema">
+                <label for="cinema">Cinéma</label>
+                <input type="radio" name="prefer" id="tech" value="tech">
+                <label for="tech">Tech</label>
+            </fieldset>
             
             <button type="submit">Envoyer</button>
             
         </fieldset>
-    </form>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </form> -->
+    <section id="ex1">
+        <form class="registration" method="post">
+            <h1>👋 Souhaitez vous recevoir notre newsletter ?</h1>
+          
+            <label class="pure-material-radio">
+              <input type="radio" name="type" required>
+              <span>Oui</span>
+            </label>
+          
+            <label class="pure-material-radio">
+              <input type="radio" name="type" required>
+              <span>Non</span>
+            </label>
+          
+            <label class="pure-material-textfield-outlined">
+                <span>Votre email</span>
+               <input placeholder=" " type="email" required>
+            </label>
+          
+            <label class="pure-material-checkbox">
+              <input type="checkbox" id="conditions" name="conditions" value="conditions">
+              <span>J'accepte les conditions d'utilisation.</span>
+            </label>
+          
+            <button class="pure-material-button-contained" type="submit">Soumettre</button>
+          
+            <div class="done">
+              <h1>👌 Bien reçu !</h1>
+            </div>
+            <div class="progress">
+              <progress class="pure-material-progress-circular">
+            </div>
+          </form>
+          
+    </section>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
     <script src="js/exercices.js"></script>
 </body>
